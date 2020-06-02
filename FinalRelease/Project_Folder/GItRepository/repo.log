@@ -1,0 +1,1465 @@
+Anqi Yan (40):
+      Initial commit
+      Latest version
+      Remove Home Page
+      Changed style of data in order manage page
+      Seperate css with html
+      Check record based on each store
+      Check record based on each store
+      Check record based on each store
+      Changed data in the middle part
+      Add the customer data
+      Fixed order data
+      Add store record option to every page
+      Fixed store record data
+      Add store Record Url
+      Add store Record Url
+      Combine tables
+      Combine tables
+      Modified data
+      Monthly outcome
+      Able to check monthly outcome by selecting year and month
+      Able to search order based on year, month and store
+      Get most rented car in this period
+      Check month outcome based on car type
+      Recommened system
+      Recommendation in homepage
+      Add css
+      Fixed crashing when select year only
+      recommend system in home page
+      Changed car makename to car type in the recommend section
+      Fiexed staffinformation bug
+      Add contact us page, turned off debug mode in project setting, some minor changes
+      Changed style of text in recommendation
+      css of Contact us page
+      static/carRental/contactStyle.css edited online with Bitbucket
+      original files
+      add contact page
+      add contact us page
+      Fixed style issues in contact page
+      Fixed a mirror style issue in contact page
+      Fixed car recommendation position in home page
+
+ChengMing Guo (71):
+      l create the login page
+      l create the login page (css)
+      l create the login page
+      improvement of login
+      improvement of login
+      improvement of login
+      change a bit css and homepage links to loginpage
+      change a bit css and homepage links to loginpage
+      change a bit css and homepage links to loginpage
+      finish the homepage
+      finish the homepage
+      finish the homepage
+      improvement of homepage
+      improvement of homepage
+      change a bit css
+      change a bit css
+      signup link to database
+      signup link to database
+      change the register table
+      finish half validation
+      finish half validation
+      register table change
+      validation is completed
+      validation is completed
+      password is hased in DB
+      finish logout
+      finish logout
+      complete the role authority
+      complete the role authority
+      complete the role authority
+      l help Jamie to upload his about.html
+      change a bit about the register table
+      improvement of address validation
+      add the tip when users fail to login
+      fix error
+      fix error
+      create montlyoutcome page
+      Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+      create monthlyoutcome page
+      create monthlyoutcome page
+      improvement of monthlyoutcome
+      improvement of monthlyoutcome
+      improvement of monthlyoutcome
+      change of outcomepage
+      change of outcomepage
+      finish monthlyoutcome functionality
+      finish monthlyoutcome functionality
+      can insert the new order to database now
+      create the staff table
+      role authority
+      test of role authority
+      staff information page completed
+      link anqi sql
+      role authority completed
+      role authority completed
+      fix the some css
+      fix the some css
+      change a bit css
+      change a bit css
+      setting is changed
+      change the loginpage, orderoveriew, staffnotification
+      add insert validation
+      change 3 pages
+      change error message position
+      disable insert button at teh first time
+      fix a bit bug
+      fix a bit bug
+      fix a bug
+      delete search store
+      delete search store
+      dix a bug
+
+Leo (2):
+      Leo git test
+      YiFan Hu test successful
+
+jingfan (32):
+      new style sheet
+      new stylesheet
+      order management page added
+      css changed(top part) and add css for om page
+      order management page added
+      add css of freebrowsing page
+      add freebrowsing page
+      add freebrowsing page
+      small change of layout
+      small change of layout
+      Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+      Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+      change order management page height
+      change order management page height
+      Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+      menu changed"
+      carInformation -> caroverview
+      word fixed
+      Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+      order changed of worklist
+      word fixed
+      register page fixed
+      'freebrowsing'
+      'fb_functionality_added'
+      'fb_functionality_added_and_detailpage_added'
+      'link_to_about_page'
+      'link_to_about_page'
+      Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+      'detailpage_complete_
+      'fb_filter_bug_fixed'
+      'detailpage_complete_
+      Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+
+* 75d1585 dix a bug
+* 59c12b2 delete search store
+* 56d3339 delete search store
+* 03ac992 fix a bug
+* 2aff0c1 Fixed car recommendation position in home page
+* f37d09f Fixed a mirror style issue in contact page
+* 4f5f193 Fixed style issues in contact page
+*   4d1439f Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+|\  
+| * 630ce64 fix a bit bug
+| * 9e6fc8a fix a bit bug
+| * 7c58b44 disable insert button at teh first time
+| * 7aab6ef change error message position
+* | 27ee12d 'detailpage_complete_
+* | 65ef670 'fb_filter_bug_fixed'
+* | 9b29c34 'detailpage_complete_
+|/  
+* 4f26415 add contact us page
+* 6a3ccfe add contact page
+* c12fc0b original files
+* 1997755 static/carRental/contactStyle.css edited online with Bitbucket
+* daaa6af css of Contact us page
+* 13a0566 Changed style of text in recommendation
+* 057c598 Add contact us page, turned off debug mode in project setting, some minor changes
+* e2d3e38 change 3 pages
+* 8ebd1b7 add insert validation
+* d7ba5cd change the loginpage, orderoveriew, staffnotification
+* 11a5f40 setting is changed
+* f84df2b change a bit css
+* ed75dd5 change a bit css
+* 190bd3d fix the some css
+* 5f97b4f fix the some css
+*   2f0b207 Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+|\  
+| * fb4fcbd Fiexed staffinformation bug
+* | be3f37a 'link_to_about_page'
+* | 18856d7 'link_to_about_page'
+|/  
+* a3fbdbf 'fb_functionality_added_and_detailpage_added'
+* 0bb5538 'fb_functionality_added'
+* 6afa6b6 'freebrowsing'
+* c6c5fdc role authority completed
+* da69939 role authority completed
+* 711db1c link anqi sql
+* 15d0270 staff information page completed
+* 7940902 test of role authority
+* ea95edf YiFan Hu test successful
+* 9aa6298 Leo git test
+* 9f7d017 role authority
+* 31cbd08 create the staff table
+* 27db061 can insert the new order to database now
+* 655143e Changed car makename to car type in the recommend section
+* be56042 recommend system in home page
+* ec6cf23 Fixed crashing when select year only
+* 1291c0b Add css
+* daacdc0 Recommendation in homepage
+* 21f1636 Recommened system
+* f8833d6 finish monthlyoutcome functionality
+* 10ce0f2 finish monthlyoutcome functionality
+* c9ca07a change of outcomepage
+* 2d4437c change of outcomepage
+* efde4a6 Check month outcome based on car type
+* 5350e75 improvement of monthlyoutcome
+* 63ad01e improvement of monthlyoutcome
+* 0511345 improvement of monthlyoutcome
+* d9a3c3d Get most rented car in this period
+* e0eed5a Able to search order based on year, month and store
+* 5ccc164 Able to check monthly outcome by selecting year and month
+* 65a24e8 Monthly outcome
+* d508dca create monthlyoutcome page
+* fe9cd4d create monthlyoutcome page
+*   adb7bd8 Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+|\  
+| * e57bafc Modified data
+* | 16a5d4b create montlyoutcome page
+|/  
+* a5f5035 Combine tables
+* e1eb8b1 Combine tables
+* e5f78fc fix error
+* 2fe9995 fix error
+* 3451477 add the tip when users fail to login
+* a2318b6 improvement of address validation
+* 9a3866f change a bit about the register table
+* e2364e5 register page fixed
+* 6e30ddb word fixed
+* f74bb06 order changed of worklist
+*   dfc0f63 Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+|\  
+| * 311d3dc l help Jamie to upload his about.html
+* | b2c6dd5 word fixed
+|/  
+* e1eae84 carInformation -> caroverview
+* 7e7cc59 menu changed"
+* b42bfc9 complete the role authority
+* 3464139 complete the role authority
+* cc15b1d complete the role authority
+* d138b53 finish logout
+* 1284049 finish logout
+* f7ea676 password is hased in DB
+* 83392cc validation is completed
+* 968c251 validation is completed
+* aece8a9 register table change
+* 5fd99f9 finish half validation
+* 3736db1 finish half validation
+* 43faa2c change the register table
+*   5a320bf Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+|\  
+| * 736fee2 Add store Record Url
+| * ca24686 Add store Record Url
+* | d3365f1 change order management page height
+* | dcc5788 change order management page height
+|/  
+*   846ca85 Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+|\  
+| * 8f6c5a2 Fixed store record data
+* |   4caac0a Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+|\ \  
+| |/  
+| * d995da3 Add store record option to every page
+| * 680dd12 Fixed order data
+* | 9d91508 small change of layout
+* | 2d10ea2 small change of layout
+|/  
+* 3d855b7 add freebrowsing page
+* b0f6828 add freebrowsing page
+* 7b4c958 add css of freebrowsing page
+* 6a714fe signup link to database
+* 50aafbf signup link to database
+* b7001d3 change a bit css
+* 938a65a change a bit css
+* 0ce4365 improvement of homepage
+* ac9fadb improvement of homepage
+* 0d70e71 finish the homepage
+* 9ed4ae6 finish the homepage
+* 40a692e finish the homepage
+* 1d2c87f Add the customer data
+* 2da2212 Changed data in the middle part
+* 5029225 Check record based on each store
+* 33167b2 Check record based on each store
+* b6b6e2b Check record based on each store
+* 3c0cad2 order management page added
+* 99a815b css changed(top part) and add css for om page
+* 940a9fb order management page added
+* 5984d4b change a bit css and homepage links to loginpage
+* 009fb1b change a bit css and homepage links to loginpage
+* 703da6d change a bit css and homepage links to loginpage
+*   285241f new stylesheet
+|\  
+| * db1bfa9 Seperate css with html
+| * a7697f7 Changed style of data in order manage page
+* | 9079349 new style sheet
+|/  
+* f812dee Remove Home Page
+* e5c0cc3 improvement of login
+* 44db0de improvement of login
+* 1712033 improvement of login
+* 6002e0b Latest version
+* f5c69ca l create the login page
+* c2e6e85 l create the login page (css)
+* bb4282a l create the login page
+* 88ddb50 Initial commit
+commit 75d1585c8562098e07825f999c019ef581e2bd7a
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Oct 24 15:13:06 2018 +0800
+
+    dix a bug
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 59c12b2a05f47e6b53fbceade0a13da6d6b7fd49
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Oct 24 13:02:48 2018 +0800
+
+    delete search store
+
+ 1 file changed, 2 deletions(-)
+
+commit 56d33395c6f8b39b188f206e14b45c3050303ff6
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Oct 24 13:02:33 2018 +0800
+
+    delete search store
+
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 03ac992a19081390976eea4a1dfc278965de4255
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Tue Oct 23 16:11:52 2018 +0800
+
+    fix a bug
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2aff0c189e4d1db80426378f6cd424ba311d0bb4
+Author: Anqi Yan <781236437@qq.com>
+Date:   Mon Oct 22 10:43:14 2018 +1000
+
+    Fixed car recommendation position in home page
+
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+
+commit f37d09f7e2ff6ed8cf66c2184d1dfb9b648aeb51
+Author: Anqi Yan <781236437@qq.com>
+Date:   Mon Oct 22 10:32:06 2018 +1000
+
+    Fixed a mirror style issue in contact page
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 4f5f19311e1936f23f91704660accad8887df5a8
+Author: Anqi Yan <781236437@qq.com>
+Date:   Mon Oct 22 10:28:08 2018 +1000
+
+    Fixed style issues in contact page
+
+ 2 files changed, 26 insertions(+), 6 deletions(-)
+
+commit 4d1439f2400fc38e4fddec1a5b71500949ecc37a
+Merge: 27ee12d 630ce64
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Sun Oct 21 23:33:24 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+
+commit 27ee12d240f1e956ada2cf81391ca2448fcca0d7
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Sun Oct 21 23:33:04 2018 +1000
+
+    'detailpage_complete_
+
+ 1 file changed, 316 insertions(+), 27 deletions(-)
+
+commit 65ef670040a613a910c5063862b981e9385dfd97
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Sun Oct 21 23:32:37 2018 +1000
+
+    'fb_filter_bug_fixed'
+
+ 1 file changed, 17 insertions(+), 6 deletions(-)
+
+commit 9b29c34acc598a81c4641992a4a20fd417e748c2
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Sun Oct 21 23:29:31 2018 +1000
+
+    'detailpage_complete_
+
+ 8 files changed, 138 insertions(+), 82 deletions(-)
+
+commit 630ce6424ff11f49b9f3b3eec83b74c02a97bb46
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 21 15:22:21 2018 +0800
+
+    fix a bit bug
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9e6fc8a375be5d6636809fd2efac550728a96326
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 21 15:22:05 2018 +0800
+
+    fix a bit bug
+
+ 3 files changed, 8 insertions(+), 3 deletions(-)
+
+commit 7c58b442f6419a431f11b0e3865cb07ac4ad35d7
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sat Oct 20 19:44:04 2018 +0800
+
+    disable insert button at teh first time
+
+ 1 file changed, 1 insertion(+)
+
+commit 7aab6efb373ce9fb5e0abdafda503fe054ceff17
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sat Oct 20 19:43:40 2018 +0800
+
+    change error message position
+
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 4f26415a1496500158886adc23f2406ca44971c6
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sat Oct 20 15:55:57 2018 +1000
+
+    add contact us page
+
+ 2 files changed, 5 insertions(+)
+
+commit 6a3ccfea3d55dd6f730ad48d3e0acc619d77cd49
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sat Oct 20 15:54:54 2018 +1000
+
+    add contact page
+
+ 12 files changed, 1427 insertions(+), 1345 deletions(-)
+
+commit c12fc0bca68a55a0e9c5d6a9787cd94dc1db7021
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sat Oct 20 15:38:52 2018 +1000
+
+    original files
+
+ 83 files changed, 3499 insertions(+), 3589 deletions(-)
+
+commit 19977555db5b37061a7d8b6a68bcc0bc336c1159
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sat Oct 20 04:55:53 2018 +0000
+
+    static/carRental/contactStyle.css edited online with Bitbucket
+
+ 1 file changed, 166 deletions(-)
+
+commit daaa6af5ff329978098b4f2e0c4b6ca79472941c
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sat Oct 20 14:46:01 2018 +1000
+
+    css of Contact us page
+
+ 1 file changed, 166 insertions(+)
+
+commit 13a05664e9feaf989541d21a7bc3d9730661b9f0
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sat Oct 20 14:45:16 2018 +1000
+
+    Changed style of text in recommendation
+
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+commit 057c59871dded9757e0cb1c1d9ff343343276082
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sat Oct 20 14:37:31 2018 +1000
+
+    Add contact us page, turned off debug mode in project setting, some minor changes
+
+ 15 files changed, 135 insertions(+), 55 deletions(-)
+
+commit e2d3e38537baa6045644dbbd43de397e7b677290
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 18 22:03:51 2018 +0800
+
+    change 3 pages
+
+ 8 files changed, 48 insertions(+), 30 deletions(-)
+
+commit 8ebd1b7c0d7b9133b1ce8dffa80df7182fc9f59c
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 18 22:03:32 2018 +0800
+
+    add insert validation
+
+ 1 file changed, 148 insertions(+), 1 deletion(-)
+
+commit d7ba5cd88ed3c0d31860aafa98ff897d2262b367
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 18 22:02:35 2018 +0800
+
+    change the loginpage, orderoveriew, staffnotification
+
+ 6 files changed, 68 insertions(+), 51 deletions(-)
+
+commit 11a5f40afc2c09a7c9a8dad253b857a94fb7aedf
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 18 22:01:34 2018 +0800
+
+    setting is changed
+
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit f84df2b7dc22f1fa51001cb1f2f952dc27d95eb3
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 18 08:06:08 2018 +0800
+
+    change a bit css
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ed75dd5bb9a1a5bfa90477b2cd4f2387eb461e2c
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 18 08:05:51 2018 +0800
+
+    change a bit css
+
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+
+commit 190bd3dd2562578d8d4bb7b507ec800fdfc4b08f
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 18 07:10:21 2018 +0800
+
+    fix the some css
+
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 5f97b4f6234d5d34794f0780663e00f15691e989
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 18 07:09:18 2018 +0800
+
+    fix the some css
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2f0b207245897605c1db5b70e76f7a43298c5a2a
+Merge: be3f37a fb4fcbd
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Oct 18 00:46:00 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+
+commit be3f37ae1603efbedd9de35cd61e4f9682cc607d
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Oct 18 00:40:26 2018 +1000
+
+    'link_to_about_page'
+
+ 16 files changed, 141 insertions(+)
+
+commit 18856d742e5e7aa3e73e3dd0c18534bddd8dde42
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Oct 18 00:39:53 2018 +1000
+
+    'link_to_about_page'
+
+ 14 files changed, 57 insertions(+), 46 deletions(-)
+
+commit fb4fcbd516d6a45760dfa54e728ebc17ec7fc435
+Author: Anqi Yan <781236437@qq.com>
+Date:   Wed Oct 17 11:21:42 2018 +1000
+
+    Fiexed staffinformation bug
+
+ 1 file changed, 1 insertion(+)
+
+commit a3fbdbfd31e9f62323446fbaab8bd6f284b68db1
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Wed Oct 17 10:50:28 2018 +1000
+
+    'fb_functionality_added_and_detailpage_added'
+
+ 2 files changed, 183 insertions(+), 127 deletions(-)
+
+commit 0bb55386393f53ed445aeb30cb402823dc40e0d8
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Wed Oct 17 10:49:30 2018 +1000
+
+    'fb_functionality_added'
+
+ 1 file changed, 91 insertions(+), 3 deletions(-)
+
+commit 6afa6b622364eb950e6251711a6eccd2bb4d67e1
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Wed Oct 17 10:48:01 2018 +1000
+
+    'freebrowsing'
+
+ 1 file changed, 27 insertions(+), 21 deletions(-)
+
+commit c6c5fdc67fa49416fbe5dc83a2db3c8d1ce88b14
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Oct 15 21:56:01 2018 +0800
+
+    role authority completed
+
+ 4 files changed, 28 insertions(+), 12 deletions(-)
+
+commit da69939d1b098d3f440183ed937563243adf8fe0
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Oct 15 21:55:46 2018 +0800
+
+    role authority completed
+
+ 7 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 711db1cfd7bc2d3ae27d3186f62236d6a3f3ab7a
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Oct 15 21:55:09 2018 +0800
+
+    link anqi sql
+
+ 5 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 15d02708c3e2040ad384f658cdbd98658305d0ce
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Oct 15 21:05:38 2018 +0800
+
+    staff information page completed
+
+ 4 files changed, 124 insertions(+), 9 deletions(-)
+
+commit 7940902e4d12f37eb4e6a35aac48ac7b3cc03c65
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Oct 15 21:05:06 2018 +0800
+
+    test of role authority
+
+ 2 files changed, 25 insertions(+), 13 deletions(-)
+
+commit ea95edf8fcf3c141e6813bcfbcc1f937f0a8e484
+Author: Leo <hyf565000@gmail.com>
+Date:   Mon Oct 15 13:49:58 2018 +1000
+
+    YiFan Hu test successful
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9aa62984850a966885e9018585c312938537a4b7
+Author: Leo <hyf565000@gmail.com>
+Date:   Mon Oct 15 13:47:20 2018 +1000
+
+    Leo git test
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9f7d017e629600cc7000861c7a387508de9338c7
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 14 23:23:52 2018 +0800
+
+    role authority
+
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+commit 31cbd085380d4236a588b17b346ef02bb1a60e22
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 14 23:23:15 2018 +0800
+
+    create the staff table
+
+ 9 files changed, 14 insertions(+), 1 deletion(-)
+
+commit 27db061f16f43a2e3370ee8a64145073f9f9567a
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 14 16:50:56 2018 +0800
+
+    can insert the new order to database now
+
+ 2 files changed, 48 insertions(+), 12 deletions(-)
+
+commit 655143e8ba0f702594793440bf2e74dab16a75bd
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Oct 14 10:44:43 2018 +1000
+
+    Changed car makename to car type in the recommend section
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit be560424702d9c5e4e6e14bb9925f804e7a99ea9
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Oct 14 09:34:38 2018 +1000
+
+    recommend system in home page
+
+ 1 file changed, 158 insertions(+), 164 deletions(-)
+
+commit ec6cf23db8b96a49af889aa8457ec69b75ad2577
+Author: Anqi Yan <781236437@qq.com>
+Date:   Fri Oct 12 14:37:01 2018 +1000
+
+    Fixed crashing when select year only
+
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+commit 1291c0b984a8fbf4aa8c6e180b13fca88971703b
+Author: Anqi Yan <781236437@qq.com>
+Date:   Fri Oct 12 14:25:00 2018 +1000
+
+    Add css
+
+ 1 file changed, 4 insertions(+), 6 deletions(-)
+
+commit daacdc0e0996d9c32625241c1c043f6cc6c9c2ec
+Author: Anqi Yan <781236437@qq.com>
+Date:   Fri Oct 12 14:11:27 2018 +1000
+
+    Recommendation in homepage
+
+ 2 files changed, 81 insertions(+), 3 deletions(-)
+
+commit 21f16363ed9cd70494fb38d777b7aa442a9268e4
+Author: Anqi Yan <781236437@qq.com>
+Date:   Fri Oct 12 13:56:24 2018 +1000
+
+    Recommened system
+
+ 3 files changed, 165 insertions(+), 1 deletion(-)
+
+commit f8833d676a87998a17749657c07ccc6b2d5a5615
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 11 07:53:16 2018 +0800
+
+    finish monthlyoutcome functionality
+
+ 1 file changed, 20 insertions(+), 44 deletions(-)
+
+commit 10ce0f2b324a3e4bb9bea841d778733a51b835c1
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Oct 11 07:52:49 2018 +0800
+
+    finish monthlyoutcome functionality
+
+ 1 file changed, 17 insertions(+), 15 deletions(-)
+
+commit c9ca07acf6263087c500d28a7cdbbd757a497f86
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Oct 10 22:44:02 2018 +0800
+
+    change of outcomepage
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 2d4437c93dfbc5cfacc4cefbe5ef4e7321ba6c42
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Oct 10 22:43:41 2018 +0800
+
+    change of outcomepage
+
+ 1 file changed, 9 insertions(+), 8 deletions(-)
+
+commit efde4a6083814bfa862964f4fdd7a71494e06124
+Author: Anqi Yan <781236437@qq.com>
+Date:   Thu Oct 11 00:10:09 2018 +1000
+
+    Check month outcome based on car type
+
+ 2 files changed, 12 insertions(+), 9 deletions(-)
+
+commit 5350e7567b50480af7ea582c6024c871ac84c024
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Oct 10 21:01:16 2018 +0800
+
+    improvement of monthlyoutcome
+
+ 1 file changed, 25 insertions(+), 47 deletions(-)
+
+commit 63ad01efd35a6b3a0362ab7344d359a1c9ed9a1a
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Oct 10 21:00:31 2018 +0800
+
+    improvement of monthlyoutcome
+
+ 1 file changed, 13 insertions(+), 7 deletions(-)
+
+commit 0511345bd3244c7c14e92de51771d96dc533252f
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Oct 10 21:00:19 2018 +0800
+
+    improvement of monthlyoutcome
+
+ 1 file changed, 36 insertions(+)
+
+commit d9a3c3d0939f977832e4c55cd49f88b262f8fe42
+Author: Anqi Yan <781236437@qq.com>
+Date:   Mon Oct 8 10:48:19 2018 +1000
+
+    Get most rented car in this period
+
+ 2 files changed, 26 insertions(+), 3 deletions(-)
+
+commit e0eed5a145ceb661eb93fe6737491a3741c583fc
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Oct 7 20:51:54 2018 +1000
+
+    Able to search order based on year, month and store
+
+ 2 files changed, 16 insertions(+), 4 deletions(-)
+
+commit 5ccc1645dfe9a58a64bf47c4c0b0c771375acde8
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Oct 7 20:01:28 2018 +1000
+
+    Able to check monthly outcome by selecting year and month
+
+ 6 files changed, 78 insertions(+), 18 deletions(-)
+
+commit 65a24e8386480fe4a688f601188b010c732da07d
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Oct 7 17:21:24 2018 +1000
+
+    Monthly outcome
+
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit d508dca4041cf5b3bf4baea475158d83b1a0eaaa
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 7 14:38:48 2018 +0800
+
+    create monthlyoutcome page
+
+ 5 files changed, 31 insertions(+), 5 deletions(-)
+
+commit fe9cd4d3fc8f4088c44b8e52728b5ab8139ff401
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 7 14:38:25 2018 +0800
+
+    create monthlyoutcome page
+
+ 9 files changed, 10 insertions(+), 1 deletion(-)
+
+commit adb7bd85c9a66c548e40588ef434eef28a3bb1d4
+Merge: 16a5d4b e57bafc
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 7 14:21:52 2018 +0800
+
+    Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+
+commit 16a5d4b6ef1edeb8bf79134f366bede5832755aa
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Oct 7 14:18:20 2018 +0800
+
+    create montlyoutcome page
+
+ 1 file changed, 107 insertions(+)
+
+commit e57bafc70fb5036c7ee528cb77119a05b0c77186
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Oct 7 16:15:56 2018 +1000
+
+    Modified data
+
+ 5 files changed, 78 insertions(+), 58 deletions(-)
+
+commit a5f503559099b2b2d74872028894d550d349033a
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Oct 7 14:17:33 2018 +1000
+
+    Combine tables
+
+ 12 files changed, 93 insertions(+), 55 deletions(-)
+
+commit e1eb8b1a48249f55bd82380949404aa4c54262cc
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Oct 7 14:13:34 2018 +1000
+
+    Combine tables
+
+ 1 file changed, 38 insertions(+), 30 deletions(-)
+
+commit e5f78fcc167f1d702f039f0ef2dd99c69954bb16
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 20 16:16:33 2018 +0800
+
+    fix error
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2fe99957710ac3ab361f51baddb7dda944a61ad1
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 20 16:16:21 2018 +0800
+
+    fix error
+
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+commit 34514775ccb6b778925865df057a3b92380c922b
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 20 15:38:47 2018 +0800
+
+    add the tip when users fail to login
+
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit a2318b627dc996740b8711d5f339686a85a08f8c
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 20 15:37:19 2018 +0800
+
+    improvement of address validation
+
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+
+commit 9a3866ffd8ca720a7c3d688ab9877a6884efe65d
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 20 15:36:56 2018 +0800
+
+    change a bit about the register table
+
+ 8 files changed, 26 insertions(+), 8 deletions(-)
+
+commit e2364e50be84a3f2054d1bc3b58b31adf66feffb
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Sep 20 16:20:50 2018 +1000
+
+    register page fixed
+
+ 3 files changed, 57 insertions(+), 44 deletions(-)
+
+commit 6e30ddb1537545e550bd4a50279cb5f71277e2af
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Sep 20 12:06:23 2018 +1000
+
+    word fixed
+
+ 8 files changed, 9 insertions(+), 9 deletions(-)
+
+commit f74bb06cae3a1a06e16f292ca1c0d8c1d61d6aaf
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Sep 20 09:40:53 2018 +1000
+
+    order changed of worklist
+
+ 5 files changed, 11 insertions(+), 163 deletions(-)
+
+commit dfc0f6305b139ba80079adc19670379b51f0576f
+Merge: b2c6dd5 311d3dc
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Sep 20 09:32:52 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+
+commit b2c6dd57ebb9cfac886a73d668377d4a39506bec
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Sep 20 09:32:34 2018 +1000
+
+    word fixed
+
+ 8 files changed, 8 insertions(+), 8 deletions(-)
+
+commit 311d3dc18b71f44cbf2defaf9a42ba8bf68e0005
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 20 07:27:03 2018 +0800
+
+    l help Jamie to upload his about.html
+
+ 1 file changed, 87 insertions(+)
+
+commit e1eae84181af05bfed68f0d8e87a9cd1994159d6
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Sep 20 09:23:33 2018 +1000
+
+    carInformation -> caroverview
+
+ 7 files changed, 5 insertions(+), 3 deletions(-)
+
+commit 7e7cc59970942d96d77ae6adf478f55745255faa
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Thu Sep 20 09:22:52 2018 +1000
+
+    menu changed"
+
+ 9 files changed, 50 insertions(+), 38 deletions(-)
+
+commit b42bfc9b411a1f27ec396e1134da9929926663d1
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 14:14:26 2018 +0800
+
+    complete the role authority
+
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+commit 34641397836c7fb8f8be94ad86f2a63aa30f9351
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 14:14:18 2018 +0800
+
+    complete the role authority
+
+ 2 files changed, 22 insertions(+), 9 deletions(-)
+
+commit cc15b1d0a3a57fc8bdb1d70d0a50cb9988b00fe7
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 14:14:07 2018 +0800
+
+    complete the role authority
+
+ 4 files changed, 115 insertions(+), 106 deletions(-)
+
+commit d138b53effdc18b0c73fe7cc61f3dd2be74c5f96
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 13:26:21 2018 +0800
+
+    finish logout
+
+ 9 files changed, 62 insertions(+), 17 deletions(-)
+
+commit 128404973abe0267837988dec0b50b3bbb3720e8
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 13:25:56 2018 +0800
+
+    finish logout
+
+ 4 files changed, 106 insertions(+), 80 deletions(-)
+
+commit f7ea676cdd8078fd38582e6d85827daf544d4a06
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 11:24:29 2018 +0800
+
+    password is hased in DB
+
+ 6 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 83392ccc0f11194137779e1de4da4ff888d2d0c3
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 09:53:18 2018 +0800
+
+    validation is completed
+
+ 1 file changed, 27 insertions(+), 11 deletions(-)
+
+commit 968c2511dd22edbf5f092302d182ea0776b389bf
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 09:53:10 2018 +0800
+
+    validation is completed
+
+ 1 file changed, 68 insertions(+), 7 deletions(-)
+
+commit aece8a934b7bf6c7779cd05b69ae6a6d6a8e054c
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 19 09:52:41 2018 +0800
+
+    register table change
+
+ 6 files changed, 5 insertions(+), 6 deletions(-)
+
+commit 5fd99f9016c24780ab4d2379bd173e9b415aba35
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Tue Sep 18 22:54:27 2018 +0800
+
+    finish half validation
+
+ 2 files changed, 33 insertions(+), 13 deletions(-)
+
+commit 3736db133701d5754124ed7ca01251d1727c99d9
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Tue Sep 18 22:54:11 2018 +0800
+
+    finish half validation
+
+ 2 files changed, 72 insertions(+)
+
+commit 43faa2c7479388792145c0914daf45839f62179b
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Tue Sep 18 22:53:43 2018 +0800
+
+    change the register table
+
+ 11 files changed, 6 insertions(+), 2 deletions(-)
+
+commit 5a320bf701eb8b3635399221b12c367ae7e6c533
+Merge: d3365f1 736fee2
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 22:47:17 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+
+commit d3365f1157f5bddad770cffb81d11d51b247873e
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 22:45:26 2018 +1000
+
+    change order management page height
+
+ 1 file changed, 20 insertions(+), 22 deletions(-)
+
+commit dcc57880a878caa5018da103aafeb234298f8ccc
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 22:44:25 2018 +1000
+
+    change order management page height
+
+ 6 files changed, 1 insertion(+), 16 deletions(-)
+
+commit 736fee28ff625a673bee1595c5ef45647c3ac7ac
+Author: Anqi Yan <781236437@qq.com>
+Date:   Tue Sep 18 21:05:01 2018 +1000
+
+    Add store Record Url
+
+ 1 file changed, 2 insertions(+)
+
+commit ca2468663b138661418381ff9869cd731b22caf5
+Author: Anqi Yan <781236437@qq.com>
+Date:   Tue Sep 18 21:04:14 2018 +1000
+
+    Add store Record Url
+
+ 1 file changed, 1 insertion(+)
+
+commit 846ca85db63026d3548a80bbe59d2a6cd96cdee0
+Merge: 4caac0a 8f6c5a2
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 14:27:27 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+
+commit 8f6c5a2e7a4f3b7aad79e62f4ac43876dcded70f
+Author: Anqi Yan <781236437@qq.com>
+Date:   Tue Sep 18 14:20:54 2018 +1000
+
+    Fixed store record data
+
+ 1 file changed, 76 insertions(+), 7 deletions(-)
+
+commit 4caac0a04bd86655ba77e2126bd3c7a9962335ea
+Merge: 9d91508 d995da3
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 14:17:29 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/anqiyan/ifb299carrental
+
+commit 9d91508ebfaa03a7532923ef934dc557a71de772
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 14:15:20 2018 +1000
+
+    small change of layout
+
+ 1 file changed, 11 insertions(+), 4 deletions(-)
+
+commit 2d10ea2f8527f5f3ca9e3a7fe4217f4a934658be
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 14:14:59 2018 +1000
+
+    small change of layout
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d995da39a64b9d9e09d3715ee483b0a56ffda648
+Author: Anqi Yan <781236437@qq.com>
+Date:   Tue Sep 18 14:13:18 2018 +1000
+
+    Add store record option to every page
+
+ 5 files changed, 119 insertions(+), 83 deletions(-)
+
+commit 680dd1265db7fdec076362fb161d714fd4844b9a
+Author: Anqi Yan <781236437@qq.com>
+Date:   Tue Sep 18 14:01:00 2018 +1000
+
+    Fixed order data
+
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+commit 3d855b756b1f0ac4a0a32ee8f9634d0cc532245d
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 13:39:49 2018 +1000
+
+    add freebrowsing page
+
+ 6 files changed, 11 insertions(+), 6 deletions(-)
+
+commit b0f68289485a1d9d4730a8d15a4d67bf46132306
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 13:39:11 2018 +1000
+
+    add freebrowsing page
+
+ 7 files changed, 455 insertions(+), 186 deletions(-)
+
+commit 7b4c958ef9bca896c5b37763f1a978a45c454abe
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Tue Sep 18 13:38:40 2018 +1000
+
+    add css of freebrowsing page
+
+ 1 file changed, 299 insertions(+), 165 deletions(-)
+
+commit 6a714fe74043d4573db2cc212a266e6525bfb476
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Sep 17 22:19:09 2018 +0800
+
+    signup link to database
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 50aafbf827b64cefc5f1e1db6d9b1bf695482435
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Sep 17 22:18:42 2018 +0800
+
+    signup link to database
+
+ 25 files changed, 57 insertions(+), 141 deletions(-)
+
+commit b7001d378673bc6b26b5ad8af025d759f175fea9
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Sep 17 12:41:50 2018 +0800
+
+    change a bit css
+
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+
+commit 938a65aba1255fd2ea3129e9c0c8958ff55d12ea
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Sep 17 12:41:34 2018 +0800
+
+    change a bit css
+
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+commit 0ce43658380245f0ce9aae4db2d351fc15d3e8ea
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Sep 17 09:41:17 2018 +0800
+
+    improvement of homepage
+
+ 1 file changed, 43 insertions(+), 12 deletions(-)
+
+commit ac9fadb04a22ab8555b88eb752b2806794fc6e80
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Mon Sep 17 09:41:08 2018 +0800
+
+    improvement of homepage
+
+ 5 files changed, 77 insertions(+), 37 deletions(-)
+
+commit 0d70e71822a3be97ebc13f25eb26e93092644d59
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Sep 16 14:42:20 2018 +0800
+
+    finish the homepage
+
+ 1 file changed, 20 insertions(+), 23 deletions(-)
+
+commit 9ed4ae6cea69c5a331b3759b05979c50b3510082
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Sep 16 14:42:09 2018 +0800
+
+    finish the homepage
+
+ 2 files changed, 49 insertions(+), 6 deletions(-)
+
+commit 40a692ea9bdd711e7cb4c3273fdd3a06c6d88fa6
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sun Sep 16 14:41:57 2018 +0800
+
+    finish the homepage
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1d2c87f2d6a10a58e4d8a15f7bc6354f3faeebfd
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Sep 16 09:19:03 2018 +1000
+
+    Add the customer data
+
+ 2 files changed, 126 insertions(+), 72 deletions(-)
+
+commit 2da2212fdfc2c3c20cf1c26b8282d771a5301ab1
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Sep 16 08:58:08 2018 +1000
+
+    Changed data in the middle part
+
+ 1 file changed, 12 insertions(+), 11 deletions(-)
+
+commit 502922564f7b030c6992724b4bc088944133d7d4
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Sep 16 08:39:59 2018 +1000
+
+    Check record based on each store
+
+ 1 file changed, 1 insertion(+)
+
+commit 33167b24725ad329aa5add09f84b99fad6883d51
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Sep 16 08:38:52 2018 +1000
+
+    Check record based on each store
+
+ 1 file changed, 6 insertions(+)
+
+commit b6b6e2b6de83f2d3d20b04afe1cd0206c9cd4835
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Sep 16 08:37:39 2018 +1000
+
+    Check record based on each store
+
+ 1 file changed, 185 insertions(+)
+
+commit 3c0cad291c054557b6e68b10d9d830b4a9f57a66
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Sun Sep 16 01:58:11 2018 +1000
+
+    order management page added
+
+ 4 files changed, 212 insertions(+), 194 deletions(-)
+
+commit 99a815ba271d347d851d35ff2e45454313046a7c
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Sun Sep 16 01:57:39 2018 +1000
+
+    css changed(top part) and add css for om page
+
+ 2 files changed, 254 insertions(+), 237 deletions(-)
+
+commit 940a9fb5813ab78bf54eda47c748cbab35f996b7
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Sun Sep 16 01:55:57 2018 +1000
+
+    order management page added
+
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 5984d4b3a28fa821cf749c461f0e1580cdd02947
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sat Sep 15 22:43:09 2018 +0800
+
+    change a bit css and homepage links to loginpage
+
+ 3 files changed, 9 insertions(+), 7 deletions(-)
+
+commit 009fb1b6c27a2d8f8fbdcc115abaac39e0c95a10
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sat Sep 15 22:42:57 2018 +0800
+
+    change a bit css and homepage links to loginpage
+
+ 4 files changed, 7 insertions(+), 6 deletions(-)
+
+commit 703da6d6c86ab5779339b90a63b403d8b5a9551e
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Sat Sep 15 22:42:42 2018 +0800
+
+    change a bit css and homepage links to loginpage
+
+ 13 files changed, 3 insertions(+), 1 deletion(-)
+
+commit 285241fa1e3345c6191773815ab15183dfbc4a5f
+Merge: 9079349 db1bfa9
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Fri Sep 14 14:33:38 2018 +1000
+
+    new stylesheet
+
+commit 907934918c0c77ce0970e460b477277d84e478a2
+Author: jingfan <n9840532@qut.edu.au>
+Date:   Fri Sep 14 14:03:16 2018 +1000
+
+    new style sheet
+
+ 1 file changed, 153 insertions(+), 103 deletions(-)
+
+commit db1bfa9649da27978c41e4084607b067012bec2a
+Author: Anqi Yan <781236437@qq.com>
+Date:   Thu Sep 13 22:18:43 2018 +1000
+
+    Seperate css with html
+
+ 5 files changed, 223 insertions(+), 37 deletions(-)
+
+commit a7697f7f08cd519383385e91b30807c006d77e4f
+Author: Anqi Yan <781236437@qq.com>
+Date:   Thu Sep 13 22:17:03 2018 +1000
+
+    Changed style of data in order manage page
+
+ 18 files changed, 76 insertions(+), 7 deletions(-)
+
+commit f812dee2e43cbe2c6b0b8771b303a942fb132de6
+Author: Anqi Yan <781236437@qq.com>
+Date:   Thu Sep 13 13:41:34 2018 +1000
+
+    Remove Home Page
+
+ 7 files changed, 3 insertions(+), 4 deletions(-)
+
+commit e5c0cc36a572772fd68a8056fc8e41c4044b386f
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 13 11:26:28 2018 +0800
+
+    improvement of login
+
+ 2 files changed, 44 insertions(+), 1 deletion(-)
+
+commit 44db0dee328996315f9e6018b793c4a79bb1a67c
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 13 11:26:14 2018 +0800
+
+    improvement of login
+
+ 1 file changed, 32 insertions(+), 3 deletions(-)
+
+commit 1712033ad9a56b936492c1feaf0f945e39cc3a4e
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Thu Sep 13 11:25:44 2018 +0800
+
+    improvement of login
+
+ 11 files changed, 6 insertions(+)
+
+commit 6002e0bf5fc0680c9d7dce2e6aaa54af0f2acb25
+Author: Anqi Yan <781236437@qq.com>
+Date:   Thu Sep 13 12:12:03 2018 +1000
+
+    Latest version
+
+ 67 files changed, 209 insertions(+), 156 deletions(-)
+
+commit f5c69ca01e0b8d8f70d3a7109a3670e3d12001c6
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 12 19:35:42 2018 +0800
+
+    l create the login page
+
+ 1 file changed, 43 insertions(+)
+
+commit c2e6e8579f81dc738d24aa549ddef3c2f67b6df5
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 12 19:35:23 2018 +0800
+
+    l create the login page (css)
+
+ 1 file changed, 32 insertions(+), 3 deletions(-)
+
+commit bb4282a6e746daa4683c04751ee7080115b2a9ff
+Author: ChengMing Guo <n9886125@qut.edu.au>
+Date:   Wed Sep 12 19:34:43 2018 +0800
+
+    l create the login page
+
+ 12 files changed, 6 insertions(+)
+
+commit 88ddb508f776db4cc8e72a61f1af67d5a0b35ec9
+Author: Anqi Yan <781236437@qq.com>
+Date:   Sun Sep 9 13:33:54 2018 +1000
+
+    Initial commit
+
+ 56 files changed, 616 insertions(+)

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Car Rental</title>
+		<link href  = "{% static 'carRental/style.css' %}"
+			  type = "text/css"
+			  rel = "stylesheet">
+	</head>
+	<body>
+		<div id = "top">
+			<div id = "companyName">
+				<h1>Car Rental</h1>
+			</div>
+			
+			<div class="navigation">
+ 		 		<a class="active" href="#Locations">Locations</a>
+  				<a href="#Vehicles">Vehicles</a>
+  				<a href="#Services">Services</a>
+  				<a href="#about">About</a>
+  				<a href="#Contact">Contact Us</a>
+				<a id = "loginButton" href = "#login">Log in</a>
+			</div>
+			<form action="search/" method="get">
+				<div id = "searchContainer">
+					<label class = "searchLabel" for="searchBox">Pick &nbsp Up: </label>
+					<input class = "searchBox" type = "text" name = "searchBox" placeholder = "Search here!">
+					
+					<label class = "searchLabel" for="searchBox">Location: </label>
+					<input class = "searchBox" type = "text" name = "findLocation" placeholder = "Find Location!">
+					<input class = "SearchButton" type = "submit" value = "Search">
+				</div>
+			</form>	
+
+		</div>
+		
+		
+		<div id = "middle">
+			{% for post in posts%}
+				<h2>{{post.title}}
+				{{post.Author}}
+				{{post.Description}}</h2>
+				</pr>
+			{% endfor %}
+		</div>
+		<div id = "footer">
+			Footer
+		</div>
+	</body>	
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Staff management - Order Overview</title>
+		<link href  = "{% static 'carRental/style.css' %}"
+			  type = "text/css"
+			  rel = "stylesheet">
+	</head>
+	<body>
+		<!-- Top container contains navigation bar and login/ logout button -->
+		<div class= "top">
+			<b><div class= "companyName">Car Rental Company</div>
+			<div class="menu">
+				<a href="homepage">Home&nbsp &nbsp </a>
+ 		 		<a href="#Locations">Locations&nbsp &nbsp </a>
+  				<a href="#Vehicles">Vehicles&nbsp &nbsp </a>
+  				<a href="#Services">Services&nbsp &nbsp </a>
+  				<a href="#about">About&nbsp &nbsp </a>
+			</div>
+			<div class="lgrgMenu">
+				<a href = "{% url 'logout' %}">Logout</a>
+			</div></b>
+		</div>
+		<!-- 	Shows Staff name in the page under the top container -->
+		<div class="staffContent">
+			<div class="staffMenu">
+				<div class="hiStaff">
+				{% if user.is_authenticated %}
+					Hello, {{ user.first_name }}!
+				{% else %}
+					Hello, Staff Name!
+				{% endif %}	
+				</div>
+				<a href="announcement">Announcement</a>&nbsp &nbsp 
+				<a class="active" href="orderManagement">Order Management</a>&nbsp &nbsp 
+				<a href="accountSeting">Account Setting</a>
+				
+			</div>
+			<div class="workList">
+				<ul>
+					<li><a href="orderoverview">Order Overview</a></li>
+					<li><a href="carInformation">Car Overview</a></li>
+					<li><a class="active" href="storerecord">Store Record</a></li>
+					<li><a href="customeroverview">Customer Overview</a></li>
+					<li><a href="caroerview">Cars Rented</a></li>
+					<li><a href="carreturned">Cars Returned</a></li>
+					<li><a href="bookedorder">Booked Order</a></li>
+				</ul>
+			</div>
+			<div class="tableArea">
+				<form action="search/" method="get">
+					<div class="orderSearch">
+						<input class="searchBox" type = "text" name = "searchBox" placeholder = "Customer ID/name/phone, Store name/location ...">
+						<input class="searchButton" type = "submit" value = "Search">
+					</div>
+				</form>
+				<!-- Shows table with data retrieved from database in the page-->
+				<div class="filter">
+					Sort  
+					<select>
+						<option selected> </option>
+						<option>Customer ID</option>
+						<option>Customer Name</option>
+						<option>Make-Model-Series</option>
+						<option>Pickup Store</option>
+						<option>Pickup Date</option>
+						<option>Return Store Name</option>
+						<option>Return Date</option>
+					</select>
+					&nbsp &nbsp &nbsp By
+					<select>
+						<option selected> </option>
+						<option>Newest</option>
+						<option>Descending</option>
+						<option>Ascending</option>
+					</select>
+				</div>
+				<div class="table" id="middle" >
+					<form  action = 'order' method = "get">
+						<table> 
+							<tr>
+								<th>Order ID</th>
+								<th>Order Create Date</th>
+								<th>Order Pickup Date</th>
+								<th>Order Pickup Store</th>
+								<th>Order Return Date</th>
+								<th>Order Return Store</th>
+							</tr>
+							{% for store in store%}
+							<tr>
+								<td>
+									{{store.Order_ID}}</br>
+								</td>
+								<td class="columnwc">
+									{{store.Order_CreateDate}}
+								</td>
+								<td>
+									{{store.Order_PickupDate}}
+								</td>
+								<td class="columnwc">
+									{{store.Order_PickupStore}}
+								</td>
+								<td>
+									{{store.Order_ReturnDate}}
+								</td>
+								<td class="columnwc">
+									{{store.Order_ReturnStore}}
+								</td>
+								<td><input class="searchButton" type="button" name="edit" value="Edit"></td>
+							</tr>
+							{% endfor %}
+							{% for store in store2%}
+							<tr>
+								<td>
+									{{store.Order_ID}}</br>
+								</td>
+								<td class="columnwc">
+									{{store.Order_CreateDate}}
+								</td>
+								<td>
+									{{store.Order_PickupDate}}
+								</td>
+								<td class="columnwc">
+									{{store.Order_PickupStore}}
+								</td>
+								<td>
+									{{store.Order_ReturnDate}}
+								</td>
+								<td class="columnwc">
+									{{store.Order_ReturnStore}}
+								</td>
+								<td><input class="searchButton" type="button" name="edit" value="Edit"></td>
+							</tr>
+							{% endfor %}
+							{% for store in store3%}
+							<tr>
+								<td>
+									{{store.Order_ID}}</br>
+								</td>
+								<td class="columnwc">
+									{{store.Order_CreateDate}}
+								</td>
+								<td>
+									{{store.Order_PickupDate}}
+								</td>
+								<td class="columnwc">
+									{{store.Order_PickupStore}}
+								</td>
+								<td>
+									{{store.Order_ReturnDate}}
+								</td>
+								<td class="columnwc">
+									{{store.Order_ReturnStore}}
+								</td>
+								<td><input class="searchButton" type="button" name="edit" value="Edit"></td>
+							</tr>
+							{% endfor %}
+							{% for store in store4%}
+							<tr>
+								<td>
+									{{store.Order_ID}}</br>
+								</td>
+								<td class="columnwc">
+									{{store.Order_CreateDate}}
+								</td>
+								<td>
+									{{store.Order_PickupDate}}
+								</td>
+								<td class="columnwc">
+									{{store.Order_PickupStore}}
+								</td>
+								<td>
+									{{store.Order_ReturnDate}}
+								</td>
+								<td class="columnwc">
+									{{store.Order_ReturnStore}}
+								</td>
+								<td><input class="searchButton" type="button" name="edit" value="Edit"></td>
+							</tr>
+							{% endfor %}
+						</table>
+					</form>	
+				</div>	
+			</div>
+		</div>
+		<div class="tablePageFooter">Footer</div>
+	</body>	
+			
+		
+</html>

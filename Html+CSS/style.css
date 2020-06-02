@@ -1,0 +1,115 @@
+/*Style sheet create by IFB299 CRC team*/
+body{
+	min-width: 1400px;
+	width:100%;
+}
+
+/* Top container */
+#top{
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	background:url("images/imageTop.JPG") 80%  no-repeat;
+}
+
+/* Company name style */
+h1{
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	vertical-align:middle;
+}
+
+/* Company name shows on the top left */
+#companyName{
+	width: 20%;
+	height:100px;
+	padding-top: 30px;
+	float:left;
+	border-right: 1px solid black;
+}
+
+/* style of navigation bar on the top*/
+.navigation {
+  overflow: hidden;
+  height:100px;
+  padding-top: 30px;
+  padding-left: 5%;
+}
+
+.navigation a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-right:1px solid black;
+  border-right:1px solid black;
+  border-top: 1px solid black;
+  border-bottom:1px solid black;
+}
+
+/* Navigation button style when hover */
+.navigation a:hover {
+  background-color: red;
+  color: black;
+}
+
+/* Navigation style when active */
+.navigation a.active {
+  color: white;
+}
+
+/* Style of login button on the top right of screen */
+#loginButton{
+	background-color: red;
+	float:right;
+	margin-right:20%;
+	border-left:1px solid black;
+}
+
+/* Style of searchContainer bar */
+#searchContainer{
+	width:70%;
+	height: 200px;
+	text-align:center;
+	margin:auto;
+	padding:20px;
+}
+
+/* Style of search box(input) */
+.searchBox{
+	width:50%;
+	height: 30px;
+	background-color:lightyellow;
+	display:block;
+	margin:auto;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+/* Style of label on the top of search box */
+.searchLabel{
+	color:white;
+	font-size:20pt;
+	font-weight:bold;
+	float:left;
+	margin-top: 5px;
+}
+
+#middle{
+	width: 100%;
+	height: 500px;
+	background-color: yellow;
+	text-align: center;
+}
+
+#footer{
+	width: 100%;
+	height: 50px;
+	background-color: #449922;
+	text-align: center;
+}
+

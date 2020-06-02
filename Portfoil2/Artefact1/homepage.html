@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Car Rental Company</title>
+		<script type="text/javascript" src = "{% static 'carRental/home.js' %}"></script> 
+		<link href  = "{% static 'carRental/style.css' %}"
+			  type = "text/css"
+			  rel = "stylesheet">
+		
+	</head>
+	<body>
+		<div class = "top">
+			<b><div class = "companyName">Car Rental Company</div>
+			<div class="menu">
+				<a href="homepage">Home&nbsp &nbsp </a>
+				<a href="freebrowsing">Car Rent&nbsp &nbsp </a>
+				<a href="#Vehicles">Find Store&nbsp &nbsp </a>
+				<a href="#Services">Online Service&nbsp &nbsp </a>
+				<a href="about">About&nbsp &nbsp </a>
+				<a href="contactus">Contact Us&nbsp &nbsp </a>
+				{% if user.is_authenticated %}
+					{% if user.is_staff %}
+					<a href = "{% url 'orderoverview' %}">Management System&nbsp &nbsp</a>
+					{% endif %}
+				{% endif %}
+			</div>
+			<div class="lgrgMenu">
+				{% if user.is_authenticated %}
+					<a href = "{% url 'logout' %}">Logout</a>
+				{% else %}
+					<a href = "userlogin">Log in</a>&nbsp / &nbsp 
+					<a href="signup">Register</a>
+				{% endif %}
+			</div></b>
+			
+		</div>	
+		
+		<div class = "middlePart">
+		
+			<form action="search/" method="get">
+				<b class="searchTitle">Rent a car now!</b>
+				<div class="pickupSearchInfo">
+					<label for="searchBox">Pick up:</label>
+					<p><input class = "searchBox" type = "text" name = "storeAddress" placeholder = "Location"></p>
+					<p><input class = "searchBox" type="text" name="storeName" placeholder="Store Name"></p>
+					<p><input class = "searchBox" type="text" name="pickupDate" placeholder="Pickup Date"></p>
+					<p><input class = "searchBox" type="text" name="pickupTime" placeholder="Pickup Time"></p>
+				</div>
+				<div class="returnSearchInfo">
+					<label for="searchBox">Return: </label>
+					<p><input class = "searchBox" type = "text" name = "storeAddress" placeholder = "Location"></p>
+					<p><input class = "searchBox" type="text" name="storeName" placeholder="Store Name"></p>
+					<p><input class = "searchBox" type="text" name="returnDate" placeholder="Return Date"></p>
+					<p><input class = "searchBox" type="text" name="returnTime" placeholder="Return Time"></p>
+				</div>
+				<input class = "searchButton"  value = "Search">
+			</form>
+		</div>
+		<div class = "carRecommendation">
+			<!-- Car recommendation	under -->	
+			<br><p>Car Recommendation</p></br>			
+			<div class="specialOffer">
+				<form action="/carRental/recommend" method="get">
+					{% csrf_token %}
+						<div class="searchSelect">
+							Year  
+							<select name = "year">
+								<option selected> </option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+							</select>
+							&nbsp &nbsp &nbsp Month
+							<select name = "month">
+								<option selected> </option>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+								<option>04</option>
+								<option>05</option>
+								<option>06</option>
+								<option>07</option>
+								<option>08</option>
+								<option>09</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+							&nbsp &nbsp &nbsp City
+							<input type="text" name="city">
+							&nbsp &nbsp &nbsp <input class='searchButton' type="submit" name="search" value="Recommend Me">
+						</div>		
+				</form>
+				<div id="middle" class = 'carRecommendation'>
+					<form  action = 'order' method = "get">
+						<h3 align = "left">
+						The top of car in this period
+						{% for year in year %}
+							{{year}}
+						{% endfor %}
+						{% for month in month %}
+							{{month}}
+						{% endfor %}
+						is:
+						<span style = 'color:red'>
+						{% for orderedByCarList in orderedByCarList %}
+							{{orderedByCarList}}
+						{% endfor %}
+						</span>
+						</br>
+						it has
+						<span style = 'color:red'>
+						{% for numberofCar in numberofCar %}
+							{{numberofCar}}
+						{% endfor %}
+						</span>
+						in total number of
+							<span style = 'color:red'>
+							{% for count in totalCount %}		
+								{{count}}
+							{% endfor %}
+							</span>
+						orders in 
+						<span style = 'color:red'>
+						{% for city in city %}
+							{{city}}
+						{% endfor %}
+						</span>
+						City
+						</h3>
+					</form>	
+				</div>	
+			</div>
+
+			<!-- Car recommendation	above -->
+			<br><p>Special Offer</p></br>
+			<form class="MEL">
+				<p style = "font-weight:normal;font-size:20px;text-align:center;">Melbourne</p>
+				{% block content %}<button class = "viewMELButton" type="button" onclick="picture_MEL()">View more specials</button>
+				<style>*{padding:0; list-style:none;} </style>
+				<div id="box_MEL">    
+					<ul>    
+					 <li><img src="/static/carRental/images/special0.jpg" width="390" height = "210"></li>    
+					   <li><img src="/static/carRental/images/special1.jpg" width="390"height = "210"></li>    
+					   <li><img src="/static/carRental/images/special2.jpg" width="390"height = "210"></li>    		
+				   </ul>    
+				</div>
+			</form>
+			<form class="BNE">
+				<p style = "font-weight:normal;font-size:20px;text-align:center;">Brisbane</p>
+				<button class = "viewBNEButton" type="button" onclick="picture_BNE()">View more specials</button>{% endblock %}
+				<div id="box_BNE">    
+					<ul>    
+					 <li><img src="/static/carRental/images/special4.png" width="390" height = "210"></li>    
+					   <li><img src="/static/carRental/images/special5.jpg" width="390"height = "210"></li>    
+					   <li><img src="/static/carRental/images/special6.jpg" width="390"height = "210"></li>    		
+				   </ul>    
+				</div>
+			</form>
+				<!--**************** Add css here**************** -->
+		</div>
+					<!--**************** Add css here**************** -->
+		<div class = "footer">
+			ChengMing Guo
+		</div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Car Rental</title>
+		<link href  = "{% static 'carRental/style.css' %}"
+			  type = "text/css"
+			  rel = "stylesheet">
+	</head>
+	<body>
+		<div id = "top">
+			<div id = "companyName">
+				<h1>Order Manage System</h1>
+			</div>
+			
+			<div class="navigation">
+ 		 		<a class="active" href="#Locations">Locations</a>
+  				<a href="#Vehicles">Vehicles</a>
+  				<a href="#Services">Services</a>
+  				<a href="#about">About</a>
+  				<a href="#Contact">Log In</a>
+			</div>
+			<form action="search/" method="get">
+				<div id = "searchContainer">
+					<label class = "searchLabel" for="searchBox">Search Order: </label>
+					<input class = "searchBox" type = "text" name = "searchBox" placeholder = "Search here!">
+					<input class = "SearchButton" type = "submit" value = "Search">
+				</div>
+			</form>	
+
+		</div>
+		
+		
+		<div id = "middle" >
+			<p class = 'orderTitle'>Customer Information</p>
+			{% for post in posts%}
+				<h2>Customer ID: &nbsp{{post.Customer_id}}</br>
+				Name: &nbsp{{post.CustomerName}}</br>
+				Phone:&nbsp{{post.PhoneNumber}}</br>
+				Address:&nbsp{{post.Address}}</br>
+				Birthday:&nbsp{{post.Birthday}}</br>
+				Occupation:&nbsp{{post.Occupation}}</br>
+				Gender:&nbsp{{post.Gender}}</br>
+				</br>
+				<form action = 'order' method = "get">
+					<input class = "CheckOrder" type = "submit" value = "Check Order">
+				</form>
+				</h2>
+				</br>
+				</br>
+			{% endfor %}
+		</div>
+		
+		
+		<div id = "footer">
+			Footer
+		</div>
+	</body>	
+</html>

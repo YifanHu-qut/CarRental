@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Staff management - Order Overview</title>
+		<link href  = "{% static 'carRental/style.css' %}"
+			  type = "text/css"
+			  rel = "stylesheet">
+	</head>
+	<body>
+		<div class= "top">
+			<b><div class= "companyName">Car Rental Company</div>
+			<div class="menu">
+				<a href="homepage">Home&nbsp &nbsp </a>
+				<a href="freebrowsing">Car Rent&nbsp &nbsp </a>
+				<a href="#Vehicles">Find Store&nbsp &nbsp </a>
+				<a href="#Services">Online Service&nbsp &nbsp </a>
+				<a href="about">About&nbsp &nbsp </a>
+				<a href="contactus">Contact Us&nbsp &nbsp </a>	
+			</div>
+			<div class="lgrgMenu">
+				{% if user.is_authenticated %}
+					<a href = "{% url 'logout' %}">Logout</a>
+				{% else %}
+					<a href = "userlogin">Log in</a>&nbsp / &nbsp 
+					<a href="signup">Register</a>
+				{% endif %}
+			</div></b>
+		</div>
+		
+		<div class="staffContent">
+			<div class="staffMenu">
+				<div class="hiStaff">
+				{% if user.is_authenticated %}
+					Hello, {{ user.last_name }}!
+				{% else %}
+					Hello, Staff Name!
+				{% endif %}	
+				</div>
+				<a href="#">Announcement</a>&nbsp &nbsp 
+				<a class="active" href="monthlyoutcome">Order Management</a>&nbsp &nbsp 
+				<a href="staffinformation">Staff Information</a>		
+			</div>
+			<div class="workList">
+				<ul>
+					<li><a href="orderoverview">Order Overview</a></li>
+					<li><a href="caroverview">Car Overview</a></li>
+					<li><a href="customeroverview">Customer Overview</a></li>
+					<li><a href="storerecord">Store Record</a></li>
+					<li><a href="">Cars Rented(Coming Soon..)</a></li>
+					<li><a href="">Cars Returned(Coming Soon..)</a></li>
+					<li><a href="">Booked Order(Coming Soon..)</a></li>
+					<li><a class="active" href="monthlyoutcome">Monthly Outcome</a></li>
+					
+				</ul>
+			</div>
+			<div class="tableArea">
+				
+				<!-- 
+					<div class="orderSearch">
+						<input class="searchBox" type = "text" name = "searchBox" placeholder = "Customer ID/name/phone, Store name/location ...">
+						<input class="searchButton" type = "submit" value = "Search">
+					</div>
+				 -->
+					
+				<h1>
+				Year:{% for year in year %}
+					{{year}}
+				{% endfor %}
+					
+				month:{% for month in month %}
+					{{month}}
+				{% endfor %}</br>
+				
+				Total:{% for count in monthCount %}
+					{{count}}
+				{% endfor %}
+				Orders</br>
+				
+				<span style = "color:red;">{{ error_msg }}</span>
+				</h1>
+				<div class="table" id="middle" >
+					<form action="/carRental/monthlyoutcome"  method = "get">
+					{% csrf_token %}
+						<div class="filter">
+							Year  
+							<select name = "year">
+								<option selected> </option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+							</select>
+							&nbsp &nbsp &nbsp Month
+							<select name = "month">
+								<option selected> </option>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+								<option>04</option>
+								<option>05</option>
+								<option>06</option>
+								<option>07</option>
+								<option>08</option>
+								<option>09</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+							
+							Store  
+							<input type="text" name="store">
+							<input class="searchButton" type="submit" name="search" value="Search">
+						</div>
+							
+						</br>
+						</br>
+						<table> 
+							<tr>
+								<th>Car ID</th>
+								<th>Car Type</th>
+								<th>Car Name</th>
+								<th>StoreID</th>
+								<th>Store Address</th>
+								<th>Number of pickup or return</th>
+							</tr>
+							{% for a, b,c,d,e,f in carOutcome %}	
+							<tr>
+								<td class="columnwc">{{a}} </td>
+								<td>{{b}} </td>
+								<td class="columnwc">{{c}} </td>
+								<td>{{d}} </td>
+								<td class="columnwc">{{e}} </td>
+								<td>{{f}} </td>
+							</tr>
+							{% endfor %}
+						
+						</table>
+					</form>	
+				</div>	
+			</div>
+		</div>
+		<div class="tablePageFooter">Footer</div>
+	</body>	
+			
+		
+</html>

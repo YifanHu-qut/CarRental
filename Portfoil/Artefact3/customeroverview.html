@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Staff management - Customer Overview</title>
+		<link href  = "{% static 'carRental/style.css' %}"
+			  type = "text/css"
+			  rel = "stylesheet">
+	</head>
+	<body>
+		<!-- Top container contains navigation bar and login/ logout button -->
+		<div class= "top">
+			<b><div class= "companyName">Car Rental Company</div>
+			<div class="menu">
+				<a href="homepage">Home&nbsp &nbsp </a>
+ 		 		<a href="#Locations">Locations&nbsp &nbsp </a>
+  				<a href="#Vehicles">Vehicles&nbsp &nbsp </a>
+  				<a href="#Services">Services&nbsp &nbsp </a>
+  				<a href="#about">About&nbsp &nbsp </a>
+			</div>
+			<div class="lgrgMenu">
+				<a href = "{% url 'logout' %}">Logout</a>
+			</div></b>
+		</div>
+		<!-- 	Shows Staff name in the page under the top container -->
+		<div class="staffContent">
+			<div class="staffMenu">
+				<div class="hiStaff">
+				{% if user.is_authenticated %}
+				Hello, {{ user.first_name }}!
+				{% else %}
+				Hello, Staff Name!
+				{% endif %}	
+				</div>
+				<a href="announcement">Announcement</a>&nbsp &nbsp 
+				<a class="active" href="orderManagement">Order Management</a>&nbsp &nbsp 
+				<a href="accountSeting">Account Setting</a>
+				
+			</div>
+			<!-- Left side navigation bar-->
+			<div class="workList">
+				<ul>
+					<li><a href="orderoverview">Order Overview</a></li>
+					<li><a href="carInformation">Car Overview</a></li>
+					<li><a href="storerecord">Store Record</a></li>
+					<li><a class="active" href="customeroverview">Customer Overview</a></li>
+					<li><a href="caroerview">Cars Rented</a></li>
+					<li><a href="carreturned">Cars Returned</a></li>
+					<li><a href="bookedorder">Booked Order</a></li>
+				</ul>
+			</div>
+			<div class="tableArea">
+				<form action="search/" method="get">
+					<div class="orderSearch">
+						<input class="searchBox" type = "text" name = "searchBox" placeholder = "Customer ID/name/phone, Store name/location ...">
+						<input class="searchButton" type = "submit" value = "Search">
+					</div>
+				</form>
+				<!-- Shows table with data retrieved from database in the page-->
+				<div class="filter">
+					Sort  
+					<select>
+						<option selected> </option>
+						<option>Customer ID</option>
+						<option>Customer Name</option>
+						<option>PhoneNumber</option>
+						<option>Address</option>
+						<option>Birthday</option>
+						<option>Occupation</option>
+						<option>Gender</option>
+					</select>
+					&nbsp &nbsp &nbsp By
+					<select>
+						<option selected> </option>
+						<option>Newest</option>
+						<option>Descending</option>
+						<option>Ascending</option>
+					</select>
+				</div>
+				<div class="table" id="middle" >
+					<form  action = 'order' method = "get">
+						<table> 
+							<tr>
+								<th>Customer ID</th>
+								<th>Customer Name</th>
+								<th>PhoneNumber</th>
+								<th>Address</th>
+								<th>Birthday</th>
+								<th>Occupation</th>
+								<th>Gender</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>......</td>
+								<td class="columnwc">.123333.</td>
+								<td>......</td>
+								<td class="columnwc">......</td>
+								<td>......</td>
+								<td class="columnwc">......</td>
+								<td>......</td>
+								<td><input class="searchButton" type="button" name="edit" value="Edit"></td>
+							</tr>
+							<tr>
+								<td>......</td>
+								<td class="columnwc">.123333.</td>
+								<td>......</td>
+								<td class="columnwc">......</td>
+								<td>......</td>
+								<td class="columnwc">......</td>
+								<td>......</td>
+								<td><input class="searchButton" type="button" name="edit" value="Edit"></td>
+							</tr>
+							<tr>
+								<td>......</td>
+								<td class="columnwc">.123333.</td>
+								<td>......</td>
+								<td class="columnwc">......</td>
+								<td>......</td>
+								<td class="columnwc">......</td>
+								<td>......</td>
+								<td><input class="searchButton" type="button" name="edit" value="Edit"></td>
+							</tr>
+						
+							{% for post in posts%}
+							<tr>
+								<td>
+									{{post.Customer_id}}
+								</td>
+								<td class="columnwc">
+									{{post.CustomerName}}
+								</td>
+								<td>
+									{{post.PhoneNumber}}
+								</td>
+								<td class="columnwc">
+									{{post.Address}}
+								</td>
+								<td>
+									{{post.Birthday}}
+								</td>
+								<td class="columnwc">
+									{{post.Occupation}}
+								</td>
+								<td>
+									{{post.Gender}}
+								</td>
+								<td><input class="searchButton" type="button" name="edit" value="Edit"></td>
+							</tr>
+				
+							{% endfor %}
+						</table>
+					</form>	
+				</div>	
+			</div>
+		</div>
+		<div class="tablePageFooter">Footer</div>
+	</body>	
+			
+		
+</html>
